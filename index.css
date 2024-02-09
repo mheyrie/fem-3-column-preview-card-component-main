@@ -1,0 +1,99 @@
+.body{
+    width: 100%;
+    margin: 0;
+    font-size: 15px;
+    font-family: 'Big Shoulders Display', 'Lexend Deca', sans-serif;  
+    color: white;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: row;    
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container div{
+    width: 200px;
+    padding: 20px;
+    height: 350px;
+    text-align: left;
+}
+
+.container .sedan{
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    
+}
+
+.container .suv{
+    background-color: hsl(184, 100%, 22%);
+    
+}
+
+.container .luxury{
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+p{
+    font-family: Lexend Deca;
+    font-weight: 400;
+}
+
+.btn{
+    cursor: pointer;
+    height: 30px;
+    width: 100px;
+    border-radius: 20px;
+    color: white;
+    border: 1px solid white;
+    background-color: white;
+    margin-top: 60px;
+}
+
+
+.sedan .btn{
+    color: hsl(31, 77%, 52%);
+}
+.sedan .btn:hover{
+    background-color: hsl(31, 77%, 52%);
+    color: white;
+}
+
+.suv .btn{
+    color: hsl(184, 100%, 22%);
+}
+.suv .btn:hover{
+    background-color: hsl(184, 100%, 22%);
+    color: white;
+}
+
+.luxury .btn{
+    color: hsl(179, 100%, 13%);
+}
+.luxury .btn:hover{
+    background-color: hsl(179, 100%, 13%);
+    color: white;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    color: black; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+  
+@media screen and (max-width: 375px){
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+}
